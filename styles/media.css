@@ -1,0 +1,19 @@
+@media screen and (max-width: 502px) {
+    .reviews__img {
+        float: none;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    .reviews__card-information {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__list {
+        justify-content: space-around;
+    }
+    
+}

@@ -5,6 +5,10 @@
 	font-family: "Titillium Web";
 }
 
+section {
+	width: 100%;
+}
+
 html {
 	font-size: 15px;
 	overflow-x: hidden;
@@ -46,7 +50,7 @@ h2 {
 	color: #3c4761;
 	font-size: 40px;
 	font-weight: 700;
-	line-height: 29.91px;
+	line-height: 50px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
 	text-align: center;
@@ -76,6 +80,7 @@ h2:after {
 #first {
 	padding-bottom: 145px;
 	height: auto;
+	min-height: 100vh;
 	background-color: #87509c
 }
 
@@ -85,19 +90,20 @@ h2:after {
 
 .header__item {
 	float: left;
-	padding: 9px 17px;
-}
-
-.header__item:hover {
-	background-color: #643a79;
-	border-radius: 5px;
+	
 }
 
 .header__menu-link {
+	padding: 9px 17px;
 	color: #ffffff;
 	font-size: 1.067rem;
 	font-weight: 400;
 	text-transform: uppercase;
+}
+
+.header__menu-link:hover {
+	background-color: #643a79;
+	border-radius: 5px;
 }
 
 .first__h1 {
@@ -108,6 +114,7 @@ h2:after {
 	display: block;
 	padding: 15px 0px;
 	width: 100%;
+	max-width: 300px;
 	background-color: #eb7d4b;
 	box-shadow: 0 -3px #c86a40 inset;
 	border-radius: 5px;
@@ -176,7 +183,7 @@ h2:after {
 	color: #ffffff;
 	font-size: 1.6rem;
 	font-weight: 700;
-	line-height: 18px;
+	line-height: 30px;
 	letter-spacing: 0.48px;
 	text-transform: uppercase;
 	text-align: center;
@@ -262,9 +269,13 @@ h2:after {
 	margin-right: 0px;
 }
 
+.team__round-icon:hover, .team__round-icon:active {
+	background-color: #7cb6df;
+}
+
 #skills {
 	padding: 117px 0px 120px 0px;
-	color: #3c4761;
+	color: #40527c;
 }
 
 .skills__card {
@@ -329,17 +340,17 @@ h2:after {
 }
 
 .portfolio__buttons-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	margin: auto;
-	margin-top: 42px;
-	width: 385px;
+	margin-top: 12px;
 }
 
 .portfolio__item {
-	float: left;
+	display: inline-block;
 	margin-right: 10px;
-	padding: 12px 23px;
-	border-radius: 5px;
-	background-color: #ebcb8d;
+	margin-top: 30px;
 }
 
 .portfolio__menu-link {
@@ -348,9 +359,12 @@ h2:after {
 	font-weight: 400;
 	letter-spacing: 0.36px;
 	text-transform: uppercase;
+	border-radius: 5px;
+	padding: 12px 23px;
+	background-color: #ebcb8d;
 }
 
-.portfolio__item:hover {
+.portfolio__menu-link:hover {
 	background-color: #ffffff;
 }
 
@@ -368,7 +382,13 @@ h2:after {
 	text-align: center;
 }
 
+.portfolio__img {
+	margin: auto;
+	width: 80%;
+}
+
 .portfolio__button {
+	margin: auto;
 	margin-top: 83px;
 	background-color: #17c2a4;
 	box-shadow: 0px -3px #14a58b inset;
@@ -380,7 +400,7 @@ h2:after {
 }
 
 #reviews {
-	padding: 119px 0px 129px 0px;
+	padding: 119px 0px 29px 0px;
 	background-color: #d74680;
 }
 
@@ -389,13 +409,13 @@ h2:after {
 }
 
 .reviews__intro {
-	margin-bottom: -70px;
+	margin-bottom: 70px;
 }
 
 .reviews__card {
 	margin: auto;
-	margin-top: 147px;
 	width: 93%;
+	margin-bottom: 100px;
 }
 
 .reviews__img {
@@ -403,8 +423,12 @@ h2:after {
 	width: 96px;
 	height: 96px;
 	margin-right: 48px;
-	margin-bottom: 70px;
+	margin-bottom: 100px;
 }
+
+/* .reviews__card-information {
+	
+} */
 
 .reviews__quote {
 	margin-top: 11px;
@@ -447,10 +471,11 @@ h2:after {
 }
 
 .contact__intro {
-	margin-bottom: 75px;
+	margin-bottom: 65px;
 }
 
 .contact__input	{
+	margin-top: 10px;
 	padding: 20px 12px;
 	width: 100%;
 	color: #ffffff;
@@ -493,13 +518,16 @@ h2:after {
 	background-color: #344b8e;
 }
 
-.footer__item {
-	float: left;
-	margin-right: 50px;
+.footer__list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-.footer__item:last-child {
-	margin-right: 0px;
+.footer__item {
+	display: inline-block;
+	padding: 0px 10px;
+	margin-bottom: 20px; 
 }
 
 .footer__link {
